@@ -1,0 +1,671 @@
+﻿<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Forneria Guerrera â€” Cucina Italiana Artigianale. Massas e pratos italianos artesanais congelados, preparados com ingredientes selecionados e tradiÃ§Ã£o gastronÃ´mica." />
+  <title>Forneria Guerrera â€” Cucina Italiana Artigianale</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500&family=Cormorant+SC:wght@300;400;500;600;700&family=EB+Garamond:ital,wght@0,400;0,500;1,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ===== NAVIGATION ===== -->
+  <nav id="navbar" class="navbar">
+    <div class="nav-inner">
+      <a href="#hero" class="nav-logo">
+        <div class="nav-logo-mark">
+          <svg viewBox="0 0 40 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M20 2 L36 10 L36 28 C36 36 20 42 20 42 C20 42 4 36 4 28 L4 10 Z" stroke="#B38A45" stroke-width="1.2" fill="none"/>
+            <text x="20" y="28" text-anchor="middle" font-family="Cormorant Garamond" font-weight="600" font-size="16" fill="#B38A45">G</text>
+          </svg>
+        </div>
+        <div class="nav-logo-text">
+          <span class="nav-forneria">FORNERIA</span>
+          <span class="nav-guerrera">GUERRERA</span>
+        </div>
+      </a>
+      <button class="nav-toggle" id="navToggle" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#sobre" class="nav-link">A Marca</a></li>
+        <li><a href="#produtos" class="nav-link">Produtos</a></li>
+        <li><a href="#diferenciais" class="nav-link">Diferenciais</a></li>
+        <li><a href="#contato" class="nav-link nav-cta">Fazer Pedido</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- ===== HERO ===== -->
+  <section id="hero" class="hero">
+    <div class="hero-bg">
+      <img src="img/hero_lasagna.png" alt="Lasanha premium Forneria Guerrera" class="hero-bg-img" />
+      <div class="hero-overlay"></div>
+    </div>
+    <div class="hero-content">
+      <div class="hero-badge reveal">
+        <span class="badge-line"></span>
+        <span class="badge-text">Cucina Italiana Artigianale</span>
+        <span class="badge-line"></span>
+      </div>
+      <div class="hero-logo reveal">
+        <div class="hero-logo-emblem">
+          <svg viewBox="0 0 80 56" fill="none" xmlns="http://www.w3.org/2000/svg" class="oven-svg">
+            <!-- Oven arch -->
+            <path d="M10 52 L10 30 Q10 8 40 8 Q70 8 70 30 L70 52" stroke="#B38A45" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+            <!-- Oven opening -->
+            <path d="M20 52 L20 34 Q20 20 40 20 Q60 20 60 34 L60 52" stroke="#B38A45" stroke-width="1" fill="none"/>
+            <!-- Fire flames -->
+            <path d="M34 48 Q36 40 40 44 Q42 38 46 48" stroke="#B38A45" stroke-width="1.2" fill="none" stroke-linecap="round"/>
+            <!-- Arch stones detail lines -->
+            <line x1="10" y1="38" x2="15" y2="36" stroke="#B38A45" stroke-width="0.6" opacity="0.6"/>
+            <line x1="70" y1="38" x2="65" y2="36" stroke="#B38A45" stroke-width="0.6" opacity="0.6"/>
+            <line x1="8" y1="46" x2="13" y2="46" stroke="#B38A45" stroke-width="0.6" opacity="0.6"/>
+            <line x1="72" y1="46" x2="67" y2="46" stroke="#B38A45" stroke-width="0.6" opacity="0.6"/>
+            <!-- Base line -->
+            <line x1="4" y1="52" x2="76" y2="52" stroke="#B38A45" stroke-width="1" opacity="0.8"/>
+            <!-- Wheat stalks left -->
+            <path d="M6 50 Q4 44 6 38 M6 38 Q4 34 6 30 M6 38 Q3 36 4 33 M6 38 Q9 36 8 33" stroke="#B38A45" stroke-width="0.8" fill="none" opacity="0.7"/>
+            <!-- Wheat stalks right -->
+            <path d="M74 50 Q76 44 74 38 M74 38 Q76 34 74 30 M74 38 Q77 36 76 33 M74 38 Q71 36 72 33" stroke="#B38A45" stroke-width="0.8" fill="none" opacity="0.7"/>
+          </svg>
+        </div>
+        <p class="hero-forneria">FORNERIA</p>
+        <h1 class="hero-guerrera">GUERRERA</h1>
+        <div class="hero-flag">
+          <span class="flag-green"></span>
+          <span class="flag-white"></span>
+          <span class="flag-red"></span>
+        </div>
+        <p class="hero-cucina">Cucina Italiana Artigianale</p>
+      </div>
+      <div class="hero-tagline reveal">
+        <h2 class="hero-headline">O sabor da ItÃ¡lia,<br /><em>pronto para o seu forno</em></h2>
+        <p class="hero-sub">Massas e pratos italianos artesanais congelados, preparados com ingredientes selecionados e tradiÃ§Ã£o gastronÃ´mica.</p>
+        <div class="hero-actions">
+          <a href="#produtos" class="btn btn-primary" id="hero-cta-products">ConheÃ§a os Produtos</a>
+          <a href="#contato" class="btn btn-secondary" id="hero-cta-order">Fazer Pedido</a>
+        </div>
+      </div>
+      <div class="hero-seals reveal">
+        <div class="seal">
+          <div class="seal-icon">âœ¦</div>
+          <span>Receitas Artesanais</span>
+        </div>
+        <div class="seal-divider">Â·</div>
+        <div class="seal">
+          <div class="seal-icon">âœ¦</div>
+          <span>Ingredientes Selecionados</span>
+        </div>
+        <div class="seal-divider">Â·</div>
+        <div class="seal">
+          <div class="seal-icon">âœ¦</div>
+          <span>Pronto para o Forno</span>
+        </div>
+      </div>
+    </div>
+    <div class="hero-scroll-hint">
+      <div class="scroll-line"></div>
+      <span>Descubra</span>
+    </div>
+  </section>
+
+  <!-- ===== SOBRE ===== -->
+  <section id="sobre" class="sobre">
+    <div class="container">
+      <div class="sobre-grid">
+        <div class="sobre-visual reveal-left">
+          <div class="sobre-img-wrap">
+            <img src="img/about_forno.png" alt="Forno a lenha artesanal Forneria Guerrera" />
+            <div class="sobre-img-frame"></div>
+          </div>
+          <div class="sobre-quote-card">
+            <p class="quote-script">"Feito com tempo.<br />Servido com propÃ³sito."</p>
+          </div>
+        </div>
+        <div class="sobre-content reveal-right">
+          <div class="section-label">A Nossa HistÃ³ria</div>
+          <h2 class="section-title">TradiÃ§Ã£o italiana em cada camada</h2>
+          <div class="gold-divider"></div>
+          <p class="sobre-text">A <strong>Forneria Guerrera</strong> nasceu da paixÃ£o pela culinÃ¡ria italiana autÃªntica â€” aquela feita com paciÃªncia, ingredientes nobres e o respeito que sÃ³ o tempo pode dar.</p>
+          <p class="sobre-text">Cada prato Ã© preparado com molhos cozidos lentamente, massas artesanais de verdade e queijos italianos selecionados. Congelamos no Ã¡pice do sabor para que vocÃª tenha uma experiÃªncia de restaurante sofisticado no conforto da sua casa.</p>
+          <p class="sobre-text">Do forno Ã  sua mesa â€” sem abrir mÃ£o de um grama de qualidade.</p>
+          <div class="sobre-stats">
+            <div class="stat">
+              <span class="stat-num">100%</span>
+              <span class="stat-label">Ingredientes Selecionados</span>
+            </div>
+            <div class="stat-sep"></div>
+            <div class="stat">
+              <span class="stat-num">+5h</span>
+              <span class="stat-label">Cozimento do RagÃ¹</span>
+            </div>
+            <div class="stat-sep"></div>
+            <div class="stat">
+              <span class="stat-num">DOP</span>
+              <span class="stat-label">Queijos Certificados</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== DIFERENCIAIS ===== -->
+  <section id="diferenciais" class="diferenciais">
+    <div class="diferenciais-bg-overlay"></div>
+    <div class="container">
+      <div class="section-header reveal">
+        <div class="section-label">Por que Guerrera</div>
+        <h2 class="section-title">O que nos torna Ãºnicos</h2>
+        <div class="gold-divider centered"></div>
+      </div>
+      <div class="diferenciais-grid">
+        <div class="diferencial-card reveal" id="dif-1">
+          <div class="dif-icon">
+            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="24" cy="24" r="22" stroke="#B38A45" stroke-width="1"/>
+              <path d="M24 12 C24 12 14 18 14 26 C14 32 18.5 36 24 36 C29.5 36 34 32 34 26 C34 18 24 12 24 12Z" stroke="#B38A45" stroke-width="1.2" fill="none"/>
+              <circle cx="24" cy="26" r="4" stroke="#B38A45" stroke-width="1"/>
+            </svg>
+          </div>
+          <h3 class="dif-title">Tomates Assados<br />no Forno a Lenha</h3>
+          <p class="dif-desc">Selecionamos tomates frescos e os assamos lentamente no forno a lenha para extrair o mÃ¡ximo de sabor e doÃ§ura natural.</p>
+        </div>
+        <div class="diferencial-card reveal" id="dif-2">
+          <div class="dif-icon">
+            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="24" cy="24" r="22" stroke="#B38A45" stroke-width="1"/>
+              <rect x="14" y="20" width="20" height="14" rx="2" stroke="#B38A45" stroke-width="1.2" fill="none"/>
+              <path d="M14 24 L34 24" stroke="#B38A45" stroke-width="0.8"/>
+              <path d="M19 20 L19 16 Q19 14 24 14 Q29 14 29 16 L29 20" stroke="#B38A45" stroke-width="1.2" fill="none"/>
+            </svg>
+          </div>
+          <h3 class="dif-title">RagÃ¹ Cozido<br />Lentamente</h3>
+          <p class="dif-desc">Nosso ragÃ¹ bolognese Ã© cozido por mais de 5 horas em fogo baixo, desenvolvendo camadas profundas de sabor impossÃ­veis de apressar.</p>
+        </div>
+        <div class="diferencial-card reveal" id="dif-3">
+          <div class="dif-icon">
+            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="24" cy="24" r="22" stroke="#B38A45" stroke-width="1"/>
+              <path d="M16 30 Q16 22 24 22 Q32 22 32 30" stroke="#B38A45" stroke-width="1.2" fill="none"/>
+              <path d="M12 30 L36 30" stroke="#B38A45" stroke-width="1"/>
+              <path d="M20 22 Q20 16 24 16 Q28 16 28 22" stroke="#B38A45" stroke-width="1" fill="none"/>
+            </svg>
+          </div>
+          <h3 class="dif-title">Queijos Nobres<br />DOP Certificados</h3>
+          <p class="dif-desc">Usamos Grana Padano DOP, mozzarella fior di latte e ricotta artesanal. Queijos com denominaÃ§Ã£o de origem protegida, de verdade.</p>
+        </div>
+        <div class="diferencial-card reveal" id="dif-4">
+          <div class="dif-icon">
+            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="24" cy="24" r="22" stroke="#B38A45" stroke-width="1"/>
+              <path d="M24 14 L24 34 M18 20 L24 14 L30 20 M18 28 L24 34 L30 28" stroke="#B38A45" stroke-width="1.2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+          <h3 class="dif-title">Massa Artesanal<br />Italiana</h3>
+          <p class="dif-desc">Cada massa Ã© aberta Ã  mÃ£o, com a espessura exata da tradiÃ§Ã£o italiana. Sem pressa, sem atalhos â€” apenas o mÃ©todo correto.</p>
+        </div>
+        <div class="diferencial-card reveal" id="dif-5">
+          <div class="dif-icon">
+            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="24" cy="24" r="22" stroke="#B38A45" stroke-width="1"/>
+              <path d="M24 14 C20 14 14 18 14 24 C14 32 24 36 24 36 C24 36 34 32 34 24 C34 18 28 14 24 14Z" stroke="#B38A45" stroke-width="1.2" fill="none"/>
+              <path d="M18 24 L22 28 L30 20" stroke="#B38A45" stroke-width="1.4" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+          <h3 class="dif-title">Congelamento<br />Premium</h3>
+          <p class="dif-desc">Congelamos rapidamente no pico do sabor, preservando textura, aroma e todos os nutrientes. Cada porÃ§Ã£o descongelada Ã© como recÃ©m-feita.</p>
+        </div>
+        <div class="diferencial-card reveal" id="dif-6">
+          <div class="dif-icon">
+            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="24" cy="24" r="22" stroke="#B38A45" stroke-width="1"/>
+              <path d="M16 28 Q16 20 24 20 Q32 20 32 28 L32 32 Q32 34 30 34 L18 34 Q16 34 16 32 Z" stroke="#B38A45" stroke-width="1.2" fill="none"/>
+              <path d="M20 20 L20 16 M24 20 L24 15 M28 20 L28 16" stroke="#B38A45" stroke-width="1" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <h3 class="dif-title">Pronto em<br />25 Minutos</h3>
+          <p class="dif-desc">Do forno Ã  mesa em menos de 30 minutos. Uma experiÃªncia de restaurante italiano premium, na praticidade do cotidiano.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PRODUTOS ===== -->
+  <section id="produtos" class="produtos">
+    <div class="container">
+      <div class="section-header reveal">
+        <div class="section-label">Nosso CardÃ¡pio</div>
+        <h2 class="section-title">Pratos em Destaque</h2>
+        <div class="gold-divider centered"></div>
+        <p class="section-sub">Cada prato, uma obra de arte gastronÃ´mica preparada com tempo, tÃ©cnica e os melhores ingredientes.</p>
+      </div>
+      <div class="produtos-grid">
+
+        <div class="produto-card reveal" id="prod-lasanha">
+          <div class="produto-img-wrap">
+            <img src="img/hero_lasagna.png" alt="Lasanha alla Bolognese Forneria Guerrera" />
+            <div class="produto-badge-img">
+              <span>DESTAQUE</span>
+            </div>
+          </div>
+          <div class="produto-info">
+            <div class="produto-tag">Lasanha Â· 400g</div>
+            <h3 class="produto-name">Lasanha alla<br />Bolognese</h3>
+            <p class="produto-desc">RagÃ¹ bolognese cozido lentamente, bechamel artesanal cremoso e queijo Grana Padano DOP. Camadas perfeitas de tradiÃ§Ã£o italiana.</p>
+            <div class="produto-ingredientes">
+              <span>RagÃ¹ Lento</span>
+              <span>Â·</span>
+              <span>Bechamel Artesanal</span>
+              <span>Â·</span>
+              <span>Grana Padano DOP</span>
+            </div>
+            <a href="#contato" class="btn btn-produto" id="btn-lasanha">Fazer Pedido</a>
+          </div>
+        </div>
+
+        <div class="produto-card reveal" id="prod-rondeli">
+          <div class="produto-img-wrap">
+            <img src="img/product_rondeli.png" alt="Rondeli de Queijo Forneria Guerrera" />
+          </div>
+          <div class="produto-info">
+            <div class="produto-tag">Massa Â· 400g</div>
+            <h3 class="produto-name">Rondeli<br />de Queijo</h3>
+            <p class="produto-desc">Massa artesanal recheada com blend de queijos selecionados, ao molho de tomates assados em forno a lenha.</p>
+            <div class="produto-ingredientes">
+              <span>4 Queijos</span>
+              <span>Â·</span>
+              <span>Tomates ao Forno</span>
+              <span>Â·</span>
+              <span>Massa Artesanal</span>
+            </div>
+            <a href="#contato" class="btn btn-produto" id="btn-rondeli">Fazer Pedido</a>
+          </div>
+        </div>
+
+        <div class="produto-card reveal" id="prod-caneloni">
+          <div class="produto-img-wrap">
+            <img src="img/product_caneloni.png" alt="Caneloni Forneria Guerrera" />
+          </div>
+          <div class="produto-info">
+            <div class="produto-tag">Massa Â· 400g</div>
+            <h3 class="produto-name">Caneloni<br />Ricota & Espinafre</h3>
+            <p class="produto-desc">Cilindros de massa recheados com ricota fresca, espinafre e queijo, cobertos com molho de tomates assados em forno a lenha.</p>
+            <div class="produto-ingredientes">
+              <span>Ricota Fresca</span>
+              <span>Â·</span>
+              <span>Espinafre</span>
+              <span>Â·</span>
+              <span>Forno a Lenha</span>
+            </div>
+            <a href="#contato" class="btn btn-produto" id="btn-caneloni">Fazer Pedido</a>
+          </div>
+        </div>
+
+        <div class="produto-card reveal" id="prod-nhoque">
+          <div class="produto-img-wrap">
+            <img src="img/product_nhoque.png" alt="Nhoque Artesanal Forneria Guerrera" />
+          </div>
+          <div class="produto-info">
+            <div class="produto-tag">Massa Â· 400g</div>
+            <h3 class="produto-name">Nhoque<br />Artesanal</h3>
+            <p class="produto-desc">Nhoque de batata feito Ã  mÃ£o, macio e levinho, ao molho sugo de tomates selecionados com manjericÃ£o fresco e parmesÃ£o.</p>
+            <div class="produto-ingredientes">
+              <span>Batata Fresca</span>
+              <span>Â·</span>
+              <span>Sugo Artesanal</span>
+              <span>Â·</span>
+              <span>ManjericÃ£o</span>
+            </div>
+            <a href="#contato" class="btn btn-produto" id="btn-nhoque">Fazer Pedido</a>
+          </div>
+        </div>
+
+        <div class="produto-card reveal" id="prod-parmegiana">
+          <div class="produto-img-wrap">
+            <img src="img/product_parmegiana.png" alt="Parmegiana Forneria Guerrera" />
+          </div>
+          <div class="produto-info">
+            <div class="produto-tag">Prato Â· 400g</div>
+            <h3 class="produto-name">Parmegiana<br />Premium</h3>
+            <p class="produto-desc">FilÃ© empanado artesanalmente, coberto com molho de tomates assados e gratinado com mozzarella fior di latte. Um clÃ¡ssico elevado.</p>
+            <div class="produto-ingredientes">
+              <span>FilÃ© Nobre</span>
+              <span>Â·</span>
+              <span>Fior di Latte</span>
+              <span>Â·</span>
+              <span>Molho Assado</span>
+            </div>
+            <a href="#contato" class="btn btn-produto" id="btn-parmegiana">Fazer Pedido</a>
+          </div>
+        </div>
+
+        <div class="produto-card reveal" id="prod-ravioli">
+          <div class="produto-img-wrap">
+            <img src="img/product_ravioli.png" alt="Ravioli Artesanal Forneria Guerrera" />
+          </div>
+          <div class="produto-info">
+            <div class="produto-tag">Massa Â· 400g</div>
+            <h3 class="produto-name">Ravioli<br />Artesanal</h3>
+            <p class="produto-desc">Massa fina aberta Ã  mÃ£o, recheada com queijos italianos e ervas frescas, servida na manteiga de sÃ¡lvia com parmesÃ£o granulado.</p>
+            <div class="produto-ingredientes">
+              <span>Massa Fina</span>
+              <span>Â·</span>
+              <span>Queijos Italianos</span>
+              <span>Â·</span>
+              <span>Manteiga de SÃ¡lvia</span>
+            </div>
+            <a href="#contato" class="btn btn-produto" id="btn-ravioli">Fazer Pedido</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== COMO FUNCIONA ===== -->
+  <section id="como-funciona" class="como-funciona">
+    <div class="container">
+      <div class="section-header reveal">
+        <div class="section-label">Simplicidade Premium</div>
+        <h2 class="section-title">Da sua escolha Ã  mesa</h2>
+        <div class="gold-divider centered"></div>
+      </div>
+      <div class="steps-grid">
+        <div class="step reveal" id="step-1">
+          <div class="step-num">01</div>
+          <div class="step-icon-wrap">
+            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="8" y="12" width="32" height="28" rx="3" stroke="#B38A45" stroke-width="1.2" fill="none"/>
+              <path d="M16 12 L16 8 M32 12 L32 8" stroke="#B38A45" stroke-width="1.2" stroke-linecap="round"/>
+              <line x1="8" y1="22" x2="40" y2="22" stroke="#B38A45" stroke-width="1"/>
+              <path d="M16 30 L20 34 L28 26" stroke="#B38A45" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+          <h3 class="step-title">Escolha<br />seus pratos</h3>
+          <p class="step-desc">Selecione os pratos do cardÃ¡pio Guerrera que mais despertam seu apetite. Monte o seu kit premium.</p>
+        </div>
+        <div class="step-connector reveal"></div>
+        <div class="step reveal" id="step-2">
+          <div class="step-num">02</div>
+          <div class="step-icon-wrap">
+            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M10 20 L24 10 L38 20 L38 40 L10 40 Z" stroke="#B38A45" stroke-width="1.2" fill="none"/>
+              <path d="M16 40 L16 28 Q16 24 24 24 Q32 24 32 28 L32 40" stroke="#B38A45" stroke-width="1.2" fill="none"/>
+              <path d="M12 20 L6 24 M36 20 L42 24" stroke="#B38A45" stroke-width="0.8" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <h3 class="step-title">Receba<br />congelado</h3>
+          <p class="step-desc">Entregamos com embalagem premium preservando toda a qualidade e frescor do produto artesanal.</p>
+        </div>
+        <div class="step-connector reveal"></div>
+        <div class="step reveal" id="step-3">
+          <div class="step-num">03</div>
+          <div class="step-icon-wrap">
+            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M10 38 L10 22 Q10 12 24 12 Q38 12 38 22 L38 38" stroke="#B38A45" stroke-width="1.2" fill="none"/>
+              <path d="M6 38 L42 38" stroke="#B38A45" stroke-width="1.2" stroke-linecap="round"/>
+              <path d="M18 26 Q20 20 24 24 Q26 18 30 26" stroke="#B38A45" stroke-width="1.2" fill="none" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <h3 class="step-title">Leve<br />ao forno</h3>
+          <p class="step-desc">Direto do freezer ao forno. Em 25 a 30 minutos a sua casa se enche do aroma inconfundÃ­vel da culinÃ¡ria italiana.</p>
+        </div>
+        <div class="step-connector reveal"></div>
+        <div class="step reveal" id="step-4">
+          <div class="step-num">04</div>
+          <div class="step-icon-wrap">
+            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <ellipse cx="24" cy="34" rx="16" ry="4" stroke="#B38A45" stroke-width="1" fill="none"/>
+              <path d="M8 34 L8 30 Q8 16 24 16 Q40 16 40 30 L40 34" stroke="#B38A45" stroke-width="1.2" fill="none"/>
+              <path d="M24 16 L24 10 M20 10 Q24 6 28 10" stroke="#B38A45" stroke-width="1" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <h3 class="step-title">Sirva uma<br />experiÃªncia</h3>
+          <p class="step-desc">Apresente Ã  mesa como um chef. Cada garfada Ã© uma viagem Ã  ItÃ¡lia â€” sem sair de casa.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PROVA SOCIAL ===== -->
+  <section id="experiencia" class="experiencia">
+    <div class="experiencia-bg">
+      <img src="img/about_forno.png" alt="ExperiÃªncia Forneria Guerrera" />
+      <div class="experiencia-overlay"></div>
+    </div>
+    <div class="container">
+      <div class="experiencia-content reveal">
+        <div class="section-label light">O que dizem sobre nÃ³s</div>
+        <h2 class="section-title light">Uma experiÃªncia que<br />fala por si mesma</h2>
+        <div class="gold-divider centered"></div>
+      </div>
+      <div class="testimonials-grid">
+        <div class="testimonial reveal" id="test-1">
+          <div class="test-stars">â˜…â˜…â˜…â˜…â˜…</div>
+          <p class="test-quote">"Parece feito na hora. Cada vez que sirvo a lasanha Guerrera, os convidados acham que passei o dia cozinhando. A qualidade Ã© impressionante."</p>
+          <div class="test-author">
+            <div class="test-avatar">M</div>
+            <div>
+              <span class="test-name">Mariana S.</span>
+              <span class="test-city">SÃ£o Paulo, SP</span>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial reveal" id="test-2">
+          <div class="test-stars">â˜…â˜…â˜…â˜…â˜…</div>
+          <p class="test-quote">"O sabor de restaurante italiano no conforto de casa. O rondeli de queijo Ã© incrÃ­vel â€” molho encorpado, massa perfeita. Produto de altÃ­ssimo nÃ­vel."</p>
+          <div class="test-author">
+            <div class="test-avatar">R</div>
+            <div>
+              <span class="test-name">Rafael M.</span>
+              <span class="test-city">Curitiba, PR</span>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial reveal" id="test-3">
+          <div class="test-stars">â˜…â˜…â˜…â˜…â˜…</div>
+          <p class="test-quote">"Uma experiÃªncia premium pronta para o forno. Nunca imaginei que comida congelada poderia ter esse nÃ­vel. A Forneria Guerrera mudou minha referÃªncia."</p>
+          <div class="test-author">
+            <div class="test-avatar">C</div>
+            <div>
+              <span class="test-name">Carolina R.</span>
+              <span class="test-city">FlorianÃ³polis, SC</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CTA FINAL ===== -->
+  <section id="cta-final" class="cta-final">
+    <div class="cta-final-bg">
+      <img src="img/hero_lasagna.png" alt="Forneria Guerrera" />
+      <div class="cta-final-overlay"></div>
+    </div>
+    <div class="container">
+      <div class="cta-final-content reveal">
+        <div class="cta-emblem">
+          <svg viewBox="0 0 60 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M7 38 L7 22 Q7 6 30 6 Q53 6 53 22 L53 38" stroke="#B38A45" stroke-width="1.2" fill="none"/>
+            <path d="M15 38 L15 26 Q15 16 30 16 Q45 16 45 26 L45 38" stroke="#B38A45" stroke-width="0.8" fill="none"/>
+            <path d="M24 34 Q26 28 30 32 Q32 26 36 34" stroke="#B38A45" stroke-width="1.2" fill="none" stroke-linecap="round"/>
+            <line x1="3" y1="38" x2="57" y2="38" stroke="#B38A45" stroke-width="1"/>
+          </svg>
+        </div>
+        <div class="section-label light">Forneria Guerrera</div>
+        <h2 class="cta-headline">Sua prÃ³xima experiÃªncia<br /><em>italiana comeÃ§a aqui</em></h2>
+        <p class="cta-sub">Pratos artesanais congelados que transformam qualquer refeiÃ§Ã£o em um momento especial.</p>
+        <div class="hero-flag centered-flag">
+          <span class="flag-green"></span>
+          <span class="flag-white"></span>
+          <span class="flag-red"></span>
+        </div>
+        <div class="cta-actions">
+          <a href="#produtos" class="btn btn-primary btn-large" id="cta-final-menu">ConheÃ§a o CardÃ¡pio</a>
+          <a href="https://wa.me/5500000000000?text=OlÃ¡%2C%20quero%20fazer%20um%20pedido%20Forneria%20Guerrera!" target="_blank" class="btn btn-whatsapp btn-large" id="cta-final-whatsapp">
+            <svg viewBox="0 0 24 24" fill="currentColor" class="whatsapp-icon"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+            Pedir pelo WhatsApp
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONTATO ===== -->
+  <section id="contato" class="contato">
+    <div class="container">
+      <div class="contato-grid">
+        <div class="contato-info reveal-left">
+          <div class="section-label">Entre em Contato</div>
+          <h2 class="section-title">FaÃ§a seu<br />Pedido</h2>
+          <div class="gold-divider"></div>
+          <p class="contato-text">Atendemos via WhatsApp, Instagram e e-mail. Fale conosco para montar o seu kit personalizado ou saber sobre disponibilidade e entrega.</p>
+          <div class="contato-channels">
+            <a href="https://wa.me/5500000000000" target="_blank" class="channel" id="contact-whatsapp">
+              <div class="channel-icon">
+                <svg viewBox="0 0 24 24" fill="#B38A45"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+              </div>
+              <div>
+                <span class="channel-label">WhatsApp</span>
+                <span class="channel-value">(00) 00000-0000</span>
+              </div>
+            </a>
+            <a href="https://instagram.com/forneriaguerrera" target="_blank" class="channel" id="contact-instagram">
+              <div class="channel-icon">
+                <svg viewBox="0 0 24 24" fill="#B38A45"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+              </div>
+              <div>
+                <span class="channel-label">Instagram</span>
+                <span class="channel-value">@forneriaguerrera</span>
+              </div>
+            </a>
+            <a href="mailto:contato@forneriaguerrera.com.br" class="channel" id="contact-email">
+              <div class="channel-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="#B38A45" stroke-width="1.5"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M2 7l10 7 10-7"/></svg>
+              </div>
+              <div>
+                <span class="channel-label">E-mail</span>
+                <span class="channel-value">contato@forneriaguerrera.com.br</span>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="contato-form-wrap reveal-right">
+          <form class="contato-form" id="contatoForm" onsubmit="handleFormSubmit(event)">
+            <h3 class="form-title">Enviar mensagem</h3>
+            <div class="form-group">
+              <label for="form-nome">Nome completo</label>
+              <input type="text" id="form-nome" name="nome" placeholder="Seu nome" required />
+            </div>
+            <div class="form-group">
+              <label for="form-whatsapp">WhatsApp</label>
+              <input type="tel" id="form-whatsapp" name="whatsapp" placeholder="(00) 00000-0000" required />
+            </div>
+            <div class="form-group">
+              <label for="form-cidade">Cidade / Estado</label>
+              <input type="text" id="form-cidade" name="cidade" placeholder="SÃ£o Paulo, SP" />
+            </div>
+            <div class="form-group">
+              <label for="form-pedido">Interesse / Pedido</label>
+              <select id="form-pedido" name="pedido">
+                <option value="">Selecione um produto</option>
+                <option value="lasanha">Lasanha alla Bolognese</option>
+                <option value="rondeli">Rondeli de Queijo</option>
+                <option value="caneloni">Caneloni Ricota & Espinafre</option>
+                <option value="nhoque">Nhoque Artesanal</option>
+                <option value="parmegiana">Parmegiana Premium</option>
+                <option value="ravioli">Ravioli Artesanal</option>
+                <option value="kit">Kit Completo</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="form-msg">Mensagem</label>
+              <textarea id="form-msg" name="mensagem" placeholder="OlÃ¡, tenho interesse em fazer um pedido..." rows="4"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary btn-full" id="form-submit">Enviar Pedido</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="footer-top">
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-brand">
+            <div class="footer-logo">
+              <div class="footer-emblem">
+                <svg viewBox="0 0 50 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M25 2 L45 12 L45 34 C45 44 25 52 25 52 C25 52 5 44 5 34 L5 12 Z" stroke="#B38A45" stroke-width="1.2" fill="none"/>
+                  <text x="25" y="34" text-anchor="middle" font-family="Cormorant Garamond" font-weight="600" font-size="20" fill="#B38A45">G</text>
+                </svg>
+              </div>
+              <div>
+                <p class="footer-forneria-text">FORNERIA</p>
+                <p class="footer-guerrera-text">GUERRERA</p>
+              </div>
+            </div>
+            <p class="footer-tagline-text">Cucina Italiana Artigianale</p>
+            <div class="hero-flag footer-flag">
+              <span class="flag-green"></span>
+              <span class="flag-white"></span>
+              <span class="flag-red"></span>
+            </div>
+            <p class="footer-slogan">"Feito com tempo.<br />Servido com propÃ³sito."</p>
+          </div>
+          <div class="footer-nav">
+            <h4 class="footer-nav-title">NavegaÃ§Ã£o</h4>
+            <ul>
+              <li><a href="#sobre">A Marca</a></li>
+              <li><a href="#produtos">Produtos</a></li>
+              <li><a href="#diferenciais">Diferenciais</a></li>
+              <li><a href="#como-funciona">Como Funciona</a></li>
+              <li><a href="#contato">Contato</a></li>
+            </ul>
+          </div>
+          <div class="footer-nav">
+            <h4 class="footer-nav-title">Produtos</h4>
+            <ul>
+              <li><a href="#produtos">Lasanha alla Bolognese</a></li>
+              <li><a href="#produtos">Rondeli de Queijo</a></li>
+              <li><a href="#produtos">Caneloni Ricota</a></li>
+              <li><a href="#produtos">Nhoque Artesanal</a></li>
+              <li><a href="#produtos">Parmegiana Premium</a></li>
+              <li><a href="#produtos">Ravioli Artesanal</a></li>
+            </ul>
+          </div>
+          <div class="footer-contact">
+            <h4 class="footer-nav-title">Contato</h4>
+            <p><a href="https://wa.me/5500000000000">(00) 00000-0000</a></p>
+            <p><a href="mailto:contato@forneriaguerrera.com.br">contato@forneriaguerrera.com.br</a></p>
+            <div class="footer-social">
+              <a href="https://instagram.com/forneriaguerrera" target="_blank" aria-label="Instagram" class="social-link" id="footer-instagram">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+              </a>
+              <a href="https://wa.me/5500000000000" target="_blank" aria-label="WhatsApp" class="social-link" id="footer-whatsapp">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container">
+        <p>Â© 2025 Forneria Guerrera Â· Cucina Italiana Artigianale Â· Todos os direitos reservados</p>
+        <p class="footer-made">Tradizione Italiana Congelata</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
