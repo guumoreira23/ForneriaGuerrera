@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Página não encontrada — Forneria Guerrera. Volte para a página principal para conhecer nossos pratos artesanais congelados." />
+  <title>Página Não Encontrada — Forneria Guerrera</title>
+  
+  <!-- ===== FAVICON ===== -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='4' fill='%230A0A0A'/%3E%3Cpath d='M16 2 L28 8 L28 20 C28 26 16 30 16 30 C16 30 4 26 4 20 L4 8 Z' stroke='%23B38A45' stroke-width='1' fill='none'/%3E%3Ctext x='16' y='21' text-anchor='middle' font-family='Georgia,serif' font-weight='700' font-size='13' fill='%23B38A45'%3EG%3C/text%3E%3C/svg%3E" />
+  
+  <!-- ===== FONTS ===== -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500&family=Cormorant+SC:wght@300;400;500;600;700&family=Jost:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+
+  <style>
+    body {
+      background: var(--black);
+      color: var(--off-white);
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 40px 24px;
+      overflow-x: hidden;
+    }
+    
+    .error-container {
+      max-width: 600px;
+      width: 100%;
+      text-align: center;
+      padding: 60px 40px;
+      background: var(--dark);
+      border: 1px solid var(--border-gold);
+      box-shadow: var(--shadow-deep), var(--shadow-gold);
+      position: relative;
+    }
+    
+    .error-container::before {
+      content: '';
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      right: 10px;
+      bottom: 10px;
+      border: 1px solid rgba(179, 138, 69, 0.1);
+      pointer-events: none;
+    }
+    
+    .error-emblem {
+      width: 80px;
+      height: 88px;
+      margin: 0 auto 30px;
+    }
+    
+    .error-code {
+      font-family: var(--font-serif);
+      font-size: 5rem;
+      font-weight: 300;
+      color: var(--gold);
+      line-height: 1;
+      margin-bottom: 10px;
+      letter-spacing: 0.05em;
+    }
+    
+    .error-title {
+      font-family: var(--font-serif);
+      font-size: 2rem;
+      font-weight: 500;
+      color: var(--off-white);
+      margin-bottom: 20px;
+      letter-spacing: 0.02em;
+    }
+    
+    .error-title em {
+      font-family: var(--font-serif);
+      font-style: italic;
+      font-weight: 400;
+      color: var(--gold-light);
+    }
+    
+    .error-desc {
+      font-family: var(--font-sans);
+      font-size: 0.95rem;
+      color: var(--text-muted);
+      line-height: 1.8;
+      margin-bottom: 40px;
+    }
+    
+    .flag-wrap {
+      display: flex;
+      justify-content: center;
+      gap: 3px;
+      margin-bottom: 40px;
+    }
+    
+    .flag-segment {
+      width: 12px;
+      height: 3px;
+      display: block;
+    }
+    
+    .flag-g { background-color: var(--italian-green); }
+    .flag-w { background-color: var(--italian-white); }
+    .flag-r { background-color: var(--italian-red); }
+  </style>
+</head>
+<body>
+
+  <div class="error-container">
+    <div class="error-emblem">
+      <svg viewBox="0 0 40 44" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <path d="M20 2 L36 10 L36 28 C36 36 20 42 20 42 C20 42 4 36 4 28 L4 10 Z" stroke="#B38A45" stroke-width="1.2" fill="none"/>
+        <text x="20" y="28" text-anchor="middle" font-family="Cormorant Garamond" font-weight="600" font-size="16" fill="#B38A45">G</text>
+      </svg>
+    </div>
+    
+    <div class="error-code">404</div>
+    <h1 class="error-title">Pagina Non Trovata<br /><em>Página não encontrada</em></h1>
+    
+    <div class="flag-wrap">
+      <span class="flag-segment flag-g"></span>
+      <span class="flag-segment flag-w"></span>
+      <span class="flag-segment flag-r"></span>
+    </div>
+    
+    <p class="error-desc">
+      Como um bom molho de tomate ou um ragù cozido lentamente, as melhores coisas levam tempo... mas esta página parece não existir ou foi movida. 
+    </p>
+    
+    <a href="index.html" class="btn btn-primary">Voltar ao Início</a>
+  </div>
+
+</body>
+</html>

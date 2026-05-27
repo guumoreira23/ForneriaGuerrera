@@ -5,10 +5,53 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description" content="Forneria Guerrera — Cucina Italiana Artigianale. Massas e pratos italianos artesanais congelados, preparados com ingredientes selecionados e tradição gastronômica." />
   <title>Forneria Guerrera — Cucina Italiana Artigianale</title>
+
+  <!-- ===== OPEN GRAPH / SOCIAL PREVIEW ===== -->
+  <meta property="og:title" content="Forneria Guerrera — Cucina Italiana Artigianale" />
+  <meta property="og:description" content="Massas e pratos italianos artesanais congelados, preparados com ingredientes selecionados e tradição gastronômica. Do forno à sua mesa." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://forneriaguerrera.com.br" />
+  <meta property="og:image" content="https://forneriaguerrera.com.br/img/hero_lasagna.webp" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:locale" content="pt_BR" />
+  <meta property="og:site_name" content="Forneria Guerrera" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Forneria Guerrera — Cucina Italiana Artigianale" />
+  <meta name="twitter:description" content="Massas e pratos italianos artesanais congelados. Do forno à sua mesa." />
+  <meta name="twitter:image" content="https://forneriaguerrera.com.br/img/hero_lasagna.webp" />
+
+  <!-- ===== FAVICON ===== -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='4' fill='%230A0A0A'/%3E%3Cpath d='M16 2 L28 8 L28 20 C28 26 16 30 16 30 C16 30 4 26 4 20 L4 8 Z' stroke='%23B38A45' stroke-width='1' fill='none'/%3E%3Ctext x='16' y='21' text-anchor='middle' font-family='Georgia,serif' font-weight='700' font-size='13' fill='%23B38A45'%3EG%3C/text%3E%3C/svg%3E" />
+  <link rel="apple-touch-icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 180 180'%3E%3Crect width='180' height='180' rx='20' fill='%230A0A0A'/%3E%3Cpath d='M90 14 L158 48 L158 116 C158 148 90 166 90 166 C90 166 22 148 22 116 L22 48 Z' stroke='%23B38A45' stroke-width='5' fill='none'/%3E%3Ctext x='90' y='122' text-anchor='middle' font-family='Georgia,serif' font-weight='700' font-size='74' fill='%23B38A45'%3EG%3C/text%3E%3C/svg%3E" />
+
+  <!-- ===== PERFORMANCE: PRELOAD HERO ===== -->
+  <link rel="preload" as="image" href="img/hero_lasagna.webp" />
+
+  <!-- ===== FONTS ===== -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500&family=Cormorant+SC:wght@300;400;500;600;700&family=EB+Garamond:ital,wght@0,400;0,500;1,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
+
+  <!-- ===== SCHEMA.ORG — LocalBusiness ===== -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FoodEstablishment",
+    "name": "Forneria Guerrera",
+    "description": "Massas e pratos italianos artesanais congelados, preparados com ingredientes selecionados e tradição gastronômica italiana.",
+    "url": "https://forneriaguerrera.com.br",
+    "telephone": "+5500000000000",
+    "email": "contato@forneriaguerrera.com.br",
+    "servesCuisine": "Italian",
+    "priceRange": "$$",
+    "image": "https://forneriaguerrera.com.br/img/hero_lasagna.webp",
+    "sameAs": [
+      "https://instagram.com/forneriaguerrera"
+    ]
+  }
+  </script>
 </head>
 <body>
 
@@ -17,10 +60,7 @@
     <div class="nav-inner">
       <a href="#hero" class="nav-logo">
         <div class="nav-logo-mark">
-          <svg viewBox="0 0 40 44" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M20 2 L36 10 L36 28 C36 36 20 42 20 42 C20 42 4 36 4 28 L4 10 Z" stroke="#B38A45" stroke-width="1.2" fill="none"/>
-            <text x="20" y="28" text-anchor="middle" font-family="Cormorant Garamond" font-weight="600" font-size="16" fill="#B38A45">G</text>
-          </svg>
+          <img src="img/logo_1_part_1.webp" alt="Forneria Guerrera Brasão" class="nav-logo-img" />
         </div>
         <div class="nav-logo-text">
           <span class="nav-forneria">FORNERIA</span>
@@ -42,7 +82,7 @@
   <!-- ===== HERO ===== -->
   <section id="hero" class="hero">
     <div class="hero-bg">
-      <img src="img/hero_lasagna.png" alt="Lasanha premium Forneria Guerrera" class="hero-bg-img" />
+      <img src="img/hero_lasagna.webp" alt="Lasanha premium Forneria Guerrera" class="hero-bg-img" fetchpriority="high" />
       <div class="hero-overlay"></div>
     </div>
     <div class="hero-content">
@@ -52,28 +92,7 @@
         <span class="badge-line"></span>
       </div>
       <div class="hero-logo reveal">
-        <div class="hero-logo-emblem">
-          <svg viewBox="0 0 80 56" fill="none" xmlns="http://www.w3.org/2000/svg" class="oven-svg">
-            <path d="M10 52 L10 30 Q10 8 40 8 Q70 8 70 30 L70 52" stroke="#B38A45" stroke-width="1.5" fill="none" stroke-linecap="round"/>
-            <path d="M20 52 L20 34 Q20 20 40 20 Q60 20 60 34 L60 52" stroke="#B38A45" stroke-width="1" fill="none"/>
-            <path d="M34 48 Q36 40 40 44 Q42 38 46 48" stroke="#B38A45" stroke-width="1.2" fill="none" stroke-linecap="round"/>
-            <line x1="10" y1="38" x2="15" y2="36" stroke="#B38A45" stroke-width="0.6" opacity="0.6"/>
-            <line x1="70" y1="38" x2="65" y2="36" stroke="#B38A45" stroke-width="0.6" opacity="0.6"/>
-            <line x1="8" y1="46" x2="13" y2="46" stroke="#B38A45" stroke-width="0.6" opacity="0.6"/>
-            <line x1="72" y1="46" x2="67" y2="46" stroke="#B38A45" stroke-width="0.6" opacity="0.6"/>
-            <line x1="4" y1="52" x2="76" y2="52" stroke="#B38A45" stroke-width="1" opacity="0.8"/>
-            <path d="M6 50 Q4 44 6 38 M6 38 Q4 34 6 30 M6 38 Q3 36 4 33 M6 38 Q9 36 8 33" stroke="#B38A45" stroke-width="0.8" fill="none" opacity="0.7"/>
-            <path d="M74 50 Q76 44 74 38 M74 38 Q76 34 74 30 M74 38 Q77 36 76 33 M74 38 Q71 36 72 33" stroke="#B38A45" stroke-width="0.8" fill="none" opacity="0.7"/>
-          </svg>
-        </div>
-        <p class="hero-forneria">FORNERIA</p>
-        <h1 class="hero-guerrera">GUERRERA</h1>
-        <div class="hero-flag">
-          <span class="flag-green"></span>
-          <span class="flag-white"></span>
-          <span class="flag-red"></span>
-        </div>
-        <p class="hero-cucina">Cucina Italiana Artigianale</p>
+        <img src="img/logo_1_transparent.webp" alt="Forneria Guerrera" class="hero-logo-img" />
       </div>
       <div class="hero-tagline reveal">
         <h2 class="hero-headline">O sabor da Itália,<br /><em>pronto para o seu forno</em></h2>
@@ -112,7 +131,7 @@
       <div class="sobre-grid">
         <div class="sobre-visual reveal-left">
           <div class="sobre-img-wrap">
-            <img src="img/about_forno.png" alt="Forno a lenha artesanal Forneria Guerrera" />
+            <img src="img/about_forno.webp" alt="Forno a lenha artesanal Forneria Guerrera" loading="lazy" />
             <div class="sobre-img-frame"></div>
           </div>
           <div class="sobre-quote-card">
@@ -159,7 +178,7 @@
       <div class="diferenciais-grid">
         <div class="diferencial-card reveal" id="dif-1">
           <div class="dif-icon">
-            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
               <circle cx="24" cy="24" r="22" stroke="#B38A45" stroke-width="1"/>
               <path d="M24 12 C24 12 14 18 14 26 C14 32 18.5 36 24 36 C29.5 36 34 32 34 26 C34 18 24 12 24 12Z" stroke="#B38A45" stroke-width="1.2" fill="none"/>
               <circle cx="24" cy="26" r="4" stroke="#B38A45" stroke-width="1"/>
@@ -170,7 +189,7 @@
         </div>
         <div class="diferencial-card reveal" id="dif-2">
           <div class="dif-icon">
-            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
               <circle cx="24" cy="24" r="22" stroke="#B38A45" stroke-width="1"/>
               <rect x="14" y="20" width="20" height="14" rx="2" stroke="#B38A45" stroke-width="1.2" fill="none"/>
               <path d="M14 24 L34 24" stroke="#B38A45" stroke-width="0.8"/>
@@ -182,7 +201,7 @@
         </div>
         <div class="diferencial-card reveal" id="dif-3">
           <div class="dif-icon">
-            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
               <circle cx="24" cy="24" r="22" stroke="#B38A45" stroke-width="1"/>
               <path d="M16 30 Q16 22 24 22 Q32 22 32 30" stroke="#B38A45" stroke-width="1.2" fill="none"/>
               <path d="M12 30 L36 30" stroke="#B38A45" stroke-width="1"/>
@@ -194,7 +213,7 @@
         </div>
         <div class="diferencial-card reveal" id="dif-4">
           <div class="dif-icon">
-            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
               <circle cx="24" cy="24" r="22" stroke="#B38A45" stroke-width="1"/>
               <path d="M24 14 L24 34 M18 20 L24 14 L30 20 M18 28 L24 34 L30 28" stroke="#B38A45" stroke-width="1.2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
             </svg>
@@ -204,7 +223,7 @@
         </div>
         <div class="diferencial-card reveal" id="dif-5">
           <div class="dif-icon">
-            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
               <circle cx="24" cy="24" r="22" stroke="#B38A45" stroke-width="1"/>
               <path d="M24 14 C20 14 14 18 14 24 C14 32 24 36 24 36 C24 36 34 32 34 24 C34 18 28 14 24 14Z" stroke="#B38A45" stroke-width="1.2" fill="none"/>
               <path d="M18 24 L22 28 L30 20" stroke="#B38A45" stroke-width="1.4" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
@@ -215,7 +234,7 @@
         </div>
         <div class="diferencial-card reveal" id="dif-6">
           <div class="dif-icon">
-            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
               <circle cx="24" cy="24" r="22" stroke="#B38A45" stroke-width="1"/>
               <path d="M16 28 Q16 20 24 20 Q32 20 32 28 L32 32 Q32 34 30 34 L18 34 Q16 34 16 32 Z" stroke="#B38A45" stroke-width="1.2" fill="none"/>
               <path d="M20 20 L20 16 M24 20 L24 15 M28 20 L28 16" stroke="#B38A45" stroke-width="1" stroke-linecap="round"/>
@@ -241,7 +260,7 @@
 
         <div class="produto-card reveal" id="prod-lasanha">
           <div class="produto-img-wrap">
-            <img src="img/hero_lasagna.png" alt="Lasanha alla Bolognese Forneria Guerrera" />
+            <img src="img/hero_lasagna.webp" alt="Lasanha alla Bolognese Forneria Guerrera" loading="lazy" />
             <div class="produto-badge-img"><span>DESTAQUE</span></div>
           </div>
           <div class="produto-info">
@@ -251,13 +270,16 @@
             <div class="produto-ingredientes">
               <span>Ragù Lento</span><span>·</span><span>Bechamel Artesanal</span><span>·</span><span>Grana Padano DOP</span>
             </div>
-            <a href="#contato" class="btn btn-produto" id="btn-lasanha">Fazer Pedido</a>
+            <div class="produto-meta">
+              <span class="produto-price">R$ 48</span>
+              <a href="#contato?produto=lasanha" class="btn btn-produto" id="btn-lasanha">Fazer Pedido</a>
+            </div>
           </div>
         </div>
 
         <div class="produto-card reveal" id="prod-rondeli">
           <div class="produto-img-wrap">
-            <img src="img/product_rondeli.png" alt="Rondeli de Queijo Forneria Guerrera" />
+            <img src="img/product_rondeli.webp" alt="Rondeli de Queijo Forneria Guerrera" loading="lazy" />
           </div>
           <div class="produto-info">
             <div class="produto-tag">Massa · 400g</div>
@@ -266,13 +288,16 @@
             <div class="produto-ingredientes">
               <span>4 Queijos</span><span>·</span><span>Tomates ao Forno</span><span>·</span><span>Massa Artesanal</span>
             </div>
-            <a href="#contato" class="btn btn-produto" id="btn-rondeli">Fazer Pedido</a>
+            <div class="produto-meta">
+              <span class="produto-price">R$ 46</span>
+              <a href="#contato?produto=rondeli" class="btn btn-produto" id="btn-rondeli">Fazer Pedido</a>
+            </div>
           </div>
         </div>
 
         <div class="produto-card reveal" id="prod-caneloni">
           <div class="produto-img-wrap">
-            <img src="img/product_caneloni.png" alt="Caneloni Forneria Guerrera" />
+            <img src="img/product_caneloni.webp" alt="Caneloni Forneria Guerrera" loading="lazy" />
           </div>
           <div class="produto-info">
             <div class="produto-tag">Massa · 400g</div>
@@ -281,13 +306,16 @@
             <div class="produto-ingredientes">
               <span>Ricota Fresca</span><span>·</span><span>Espinafre</span><span>·</span><span>Forno a Lenha</span>
             </div>
-            <a href="#contato" class="btn btn-produto" id="btn-caneloni">Fazer Pedido</a>
+            <div class="produto-meta">
+              <span class="produto-price">R$ 46</span>
+              <a href="#contato?produto=caneloni" class="btn btn-produto" id="btn-caneloni">Fazer Pedido</a>
+            </div>
           </div>
         </div>
 
         <div class="produto-card reveal" id="prod-nhoque">
           <div class="produto-img-wrap">
-            <img src="img/product_nhoque.png" alt="Nhoque Artesanal Forneria Guerrera" />
+            <img src="img/product_nhoque.webp" alt="Nhoque Artesanal Forneria Guerrera" loading="lazy" />
           </div>
           <div class="produto-info">
             <div class="produto-tag">Massa · 400g</div>
@@ -296,13 +324,16 @@
             <div class="produto-ingredientes">
               <span>Batata Fresca</span><span>·</span><span>Sugo Artesanal</span><span>·</span><span>Manjericão</span>
             </div>
-            <a href="#contato" class="btn btn-produto" id="btn-nhoque">Fazer Pedido</a>
+            <div class="produto-meta">
+              <span class="produto-price">R$ 42</span>
+              <a href="#contato?produto=nhoque" class="btn btn-produto" id="btn-nhoque">Fazer Pedido</a>
+            </div>
           </div>
         </div>
 
         <div class="produto-card reveal" id="prod-parmegiana">
           <div class="produto-img-wrap">
-            <img src="img/product_parmegiana.png" alt="Parmegiana Forneria Guerrera" />
+            <img src="img/product_parmegiana.webp" alt="Parmegiana Forneria Guerrera" loading="lazy" />
           </div>
           <div class="produto-info">
             <div class="produto-tag">Prato · 400g</div>
@@ -311,13 +342,16 @@
             <div class="produto-ingredientes">
               <span>Filé Nobre</span><span>·</span><span>Fior di Latte</span><span>·</span><span>Molho Assado</span>
             </div>
-            <a href="#contato" class="btn btn-produto" id="btn-parmegiana">Fazer Pedido</a>
+            <div class="produto-meta">
+              <span class="produto-price">R$ 58</span>
+              <a href="#contato?produto=parmegiana" class="btn btn-produto" id="btn-parmegiana">Fazer Pedido</a>
+            </div>
           </div>
         </div>
 
         <div class="produto-card reveal" id="prod-ravioli">
           <div class="produto-img-wrap">
-            <img src="img/product_ravioli.png" alt="Ravioli Artesanal Forneria Guerrera" />
+            <img src="img/product_ravioli.webp" alt="Ravioli Artesanal Forneria Guerrera" loading="lazy" />
           </div>
           <div class="produto-info">
             <div class="produto-tag">Massa · 400g</div>
@@ -326,7 +360,10 @@
             <div class="produto-ingredientes">
               <span>Massa Fina</span><span>·</span><span>Queijos Italianos</span><span>·</span><span>Manteiga de Sálvia</span>
             </div>
-            <a href="#contato" class="btn btn-produto" id="btn-ravioli">Fazer Pedido</a>
+            <div class="produto-meta">
+              <span class="produto-price">R$ 48</span>
+              <a href="#contato?produto=ravioli" class="btn btn-produto" id="btn-ravioli">Fazer Pedido</a>
+            </div>
           </div>
         </div>
 
@@ -346,7 +383,7 @@
         <div class="step reveal" id="step-1">
           <div class="step-num">01</div>
           <div class="step-icon-wrap">
-            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
               <rect x="8" y="12" width="32" height="28" rx="3" stroke="#B38A45" stroke-width="1.2" fill="none"/>
               <path d="M16 12 L16 8 M32 12 L32 8" stroke="#B38A45" stroke-width="1.2" stroke-linecap="round"/>
               <line x1="8" y1="22" x2="40" y2="22" stroke="#B38A45" stroke-width="1"/>
@@ -360,7 +397,7 @@
         <div class="step reveal" id="step-2">
           <div class="step-num">02</div>
           <div class="step-icon-wrap">
-            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
               <path d="M10 20 L24 10 L38 20 L38 40 L10 40 Z" stroke="#B38A45" stroke-width="1.2" fill="none"/>
               <path d="M16 40 L16 28 Q16 24 24 24 Q32 24 32 28 L32 40" stroke="#B38A45" stroke-width="1.2" fill="none"/>
               <path d="M12 20 L6 24 M36 20 L42 24" stroke="#B38A45" stroke-width="0.8" stroke-linecap="round"/>
@@ -373,7 +410,7 @@
         <div class="step reveal" id="step-3">
           <div class="step-num">03</div>
           <div class="step-icon-wrap">
-            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
               <path d="M10 38 L10 22 Q10 12 24 12 Q38 12 38 22 L38 38" stroke="#B38A45" stroke-width="1.2" fill="none"/>
               <path d="M6 38 L42 38" stroke="#B38A45" stroke-width="1.2" stroke-linecap="round"/>
               <path d="M18 26 Q20 20 24 24 Q26 18 30 26" stroke="#B38A45" stroke-width="1.2" fill="none" stroke-linecap="round"/>
@@ -386,7 +423,7 @@
         <div class="step reveal" id="step-4">
           <div class="step-num">04</div>
           <div class="step-icon-wrap">
-            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
               <ellipse cx="24" cy="34" rx="16" ry="4" stroke="#B38A45" stroke-width="1" fill="none"/>
               <path d="M8 34 L8 30 Q8 16 24 16 Q40 16 40 30 L40 34" stroke="#B38A45" stroke-width="1.2" fill="none"/>
               <path d="M24 16 L24 10 M20 10 Q24 6 28 10" stroke="#B38A45" stroke-width="1" stroke-linecap="round"/>
@@ -402,7 +439,7 @@
   <!-- ===== EXPERIÊNCIA / PROVA SOCIAL ===== -->
   <section id="experiencia" class="experiencia">
     <div class="experiencia-bg">
-      <img src="img/about_forno.png" alt="Experiência Forneria Guerrera" />
+      <img src="img/about_forno.webp" alt="Experiência Forneria Guerrera" loading="lazy" />
       <div class="experiencia-overlay"></div>
     </div>
     <div class="container">
@@ -452,13 +489,13 @@
   <!-- ===== CTA FINAL ===== -->
   <section id="cta-final" class="cta-final">
     <div class="cta-final-bg">
-      <img src="img/hero_lasagna.png" alt="Forneria Guerrera" />
+      <img src="img/hero_lasagna.webp" alt="Forneria Guerrera" loading="lazy" />
       <div class="cta-final-overlay"></div>
     </div>
     <div class="container">
       <div class="cta-final-content reveal">
         <div class="cta-emblem">
-          <svg viewBox="0 0 60 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <svg viewBox="0 0 60 42" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
             <path d="M7 38 L7 22 Q7 6 30 6 Q53 6 53 22 L53 38" stroke="#B38A45" stroke-width="1.2" fill="none"/>
             <path d="M15 38 L15 26 Q15 16 30 16 Q45 16 45 26 L45 38" stroke="#B38A45" stroke-width="0.8" fill="none"/>
             <path d="M24 34 Q26 28 30 32 Q32 26 36 34" stroke="#B38A45" stroke-width="1.2" fill="none" stroke-linecap="round"/>
@@ -476,7 +513,7 @@
         <div class="cta-actions">
           <a href="#produtos" class="btn btn-primary btn-large" id="cta-final-menu">Conheça o Cardápio</a>
           <a href="https://wa.me/5500000000000?text=Ol%C3%A1%2C%20quero%20fazer%20um%20pedido%20Forneria%20Guerrera!" target="_blank" class="btn btn-whatsapp btn-large" id="cta-final-whatsapp">
-            <svg viewBox="0 0 24 24" fill="currentColor" class="whatsapp-icon"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+            <svg viewBox="0 0 24 24" fill="currentColor" class="whatsapp-icon" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
             Pedir pelo WhatsApp
           </a>
         </div>
@@ -496,7 +533,7 @@
           <div class="contato-channels">
             <a href="https://wa.me/5500000000000" target="_blank" class="channel" id="contact-whatsapp">
               <div class="channel-icon">
-                <svg viewBox="0 0 24 24" fill="#B38A45"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+                <svg viewBox="0 0 24 24" fill="#B38A45" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
               </div>
               <div>
                 <span class="channel-label">WhatsApp</span>
@@ -505,7 +542,7 @@
             </a>
             <a href="https://instagram.com/forneriaguerrera" target="_blank" class="channel" id="contact-instagram">
               <div class="channel-icon">
-                <svg viewBox="0 0 24 24" fill="#B38A45"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+                <svg viewBox="0 0 24 24" fill="#B38A45" aria-hidden="true"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
               </div>
               <div>
                 <span class="channel-label">Instagram</span>
@@ -514,7 +551,7 @@
             </a>
             <a href="mailto:contato@forneriaguerrera.com.br" class="channel" id="contact-email">
               <div class="channel-icon">
-                <svg viewBox="0 0 24 24" fill="none" stroke="#B38A45" stroke-width="1.5"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M2 7l10 7 10-7"/></svg>
+                <svg viewBox="0 0 24 24" fill="none" stroke="#B38A45" stroke-width="1.5" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M2 7l10 7 10-7"/></svg>
               </div>
               <div>
                 <span class="channel-label">E-mail</span>
@@ -551,6 +588,18 @@
                 <option value="kit">Kit Completo</option>
               </select>
             </div>
+            <div class="form-group form-row">
+              <div>
+                <label for="form-quantidade">Quantidade</label>
+                <select id="form-quantidade" name="quantidade">
+                  <option value="1">1 unidade</option>
+                  <option value="2">2 unidades</option>
+                  <option value="3">3 unidades</option>
+                  <option value="4">4 unidades</option>
+                  <option value="5+">5 ou mais</option>
+                </select>
+              </div>
+            </div>
             <div class="form-group">
               <label for="form-msg">Mensagem</label>
               <textarea id="form-msg" name="mensagem" placeholder="Olá, tenho interesse em fazer um pedido..." rows="4"></textarea>
@@ -570,10 +619,7 @@
           <div class="footer-brand">
             <div class="footer-logo">
               <div class="footer-emblem">
-                <svg viewBox="0 0 50 56" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M25 2 L45 12 L45 34 C45 44 25 52 25 52 C25 52 5 44 5 34 L5 12 Z" stroke="#B38A45" stroke-width="1.2" fill="none"/>
-                  <text x="25" y="34" text-anchor="middle" font-family="Cormorant Garamond" font-weight="600" font-size="20" fill="#B38A45">G</text>
-                </svg>
+                <img src="img/logo_1_part_1.webp" alt="Forneria Guerrera Brasão" class="footer-logo-img" />
               </div>
               <div>
                 <p class="footer-forneria-text">FORNERIA</p>
@@ -615,10 +661,10 @@
             <p><a href="mailto:contato@forneriaguerrera.com.br">contato@forneriaguerrera.com.br</a></p>
             <div class="footer-social">
               <a href="https://instagram.com/forneriaguerrera" target="_blank" aria-label="Instagram" class="social-link" id="footer-instagram">
-                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+                <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
               </a>
               <a href="https://wa.me/5500000000000" target="_blank" aria-label="WhatsApp" class="social-link" id="footer-whatsapp">
-                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+                <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
               </a>
             </div>
           </div>
@@ -627,7 +673,7 @@
     </div>
     <div class="footer-bottom">
       <div class="container">
-        <p>© 2025 Forneria Guerrera · Cucina Italiana Artigianale · Todos os direitos reservados</p>
+        <p>© <span id="footer-year">2025</span> Forneria Guerrera · Cucina Italiana Artigianale · Todos os direitos reservados</p>
         <p class="footer-made">Tradizione Italiana Congelata</p>
       </div>
     </div>

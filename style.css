@@ -23,7 +23,7 @@
   --off-white: #F5F0E8;
   --cream: #EDE5D4;
   --warm-white: #FAF7F2;
-  --text-muted: #8A8480;
+  --text-muted: #9A9490;
   --text-light: rgba(245, 240, 232, 0.7);
   --italian-green: #009246;
   --italian-white: #FFFFFF;
@@ -244,6 +244,14 @@ ul {
 .nav-link.nav-cta:hover {
   background: var(--gold);
   color: var(--black);
+}
+
+/* Active nav link state */
+.nav-link.active {
+  color: var(--gold);
+}
+.nav-link.active::after {
+  transform: scaleX(1);
 }
 
 .nav-toggle {
@@ -868,6 +876,24 @@ ul {
   text-transform: uppercase;
 }
 
+.produto-meta {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.produto-meta .btn-produto {
+  margin-top: 0;
+}
+
+.produto-price {
+  font-family: var(--font-sans);
+  font-size: 1.25rem;
+  font-weight: 500;
+  color: var(--gold-light);
+}
+
 /* ===== COMO FUNCIONA ===== */
 .como-funciona {
   padding: 120px 0;
@@ -1283,6 +1309,12 @@ ul {
   min-height: 100px;
 }
 
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+}
+
 /* ===== FOOTER ===== */
 .footer {
   background: var(--black);
@@ -1578,3 +1610,31 @@ ul {
 .hero-logo { animation: fadeInUp 0.8s ease 0.4s both; }
 .hero-tagline { animation: fadeInUp 0.8s ease 0.6s both; }
 .hero-seals { animation: fadeInUp 0.8s ease 0.8s both; }
+
+/* ===== CONCEITO 01 LOGO CUSTOM STYLING ===== */
+.nav-logo-img {
+  height: 36px;
+  width: auto;
+  display: block;
+}
+
+.hero-logo-img {
+  max-width: 340px;
+  width: 100%;
+  height: auto;
+  display: block;
+  filter: drop-shadow(0 0 35px rgba(179, 138, 69, 0.25));
+  margin: 0 auto;
+}
+
+@media (max-width: 600px) {
+  .hero-logo-img {
+    max-width: 240px;
+  }
+}
+
+.footer-logo-img {
+  height: 40px;
+  width: auto;
+  display: block;
+}
